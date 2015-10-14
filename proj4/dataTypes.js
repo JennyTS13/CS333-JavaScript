@@ -16,3 +16,6 @@ print(typeof str);		//string
 print(typeof bool);		//boolean
 print(typeof obj);		//object
 print(typeof func);		//function
+
+print(typeof (1.2));
+print(2.5e10);
