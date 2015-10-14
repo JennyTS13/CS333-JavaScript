@@ -1,8 +1,6 @@
 /** Authors: Tiffany Lam and Jenny Lin
   * CS333 Project 4 
-  * Task 1: DataType limitations and internal representation
-  * This is a program that displays the ways that limitations 
-  * and internal representations of two different data types - int and tinyint
+  * Task 1
   */
 
 var num = 1;
