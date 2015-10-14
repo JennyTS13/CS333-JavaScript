@@ -15,6 +15,13 @@ print(2 + 6 / 2);	// 2 + (6 / 2) = 5
 print('\nMultiplication/Division vs Mod');
 print(2 * 6 % 2);	// 2 * (6 % 2) = 0, mod has precedence over multiplication and division
 
+print('\nCaret')
+print( 2 ^ 2);		//0, caret is bitwise exclusive OR
+print( 4 ^ 2);		//6
+print(2 * 2 ^ 2);	//6, arithmetic has precedence over ^
+print(2 + 2 ^ 2);	//6
+
+
 print('\nOperator vs Equality');
 print(3 + 1 == 4);	//true, operators (+, -, *, /) take precedence over equality
 
