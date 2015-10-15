@@ -1,7 +1,8 @@
-/** Authors: Tiffany Lam and Jenny Lin
-  * CS333 Project 4 
-  * Task 1
-  */
+/* Authors: Tiffany Lam and Jenny Lin
+ * CS333 Project 4 
+ * Task 1: Data Types
+ * Demonstrates the internal representation and limitations of data types
+ */
 
 var num = 1;
 var str = "string";
