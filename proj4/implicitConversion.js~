@@ -1,0 +1,10 @@
+/* Authors: Tiffany Lam and Jenny Lin
+ * CS333 Project 4 
+ * Task 3: Implicit Conversion
+ * This program gives 3 examples of implicit conversion in Javascript
+ */
+
+//Adding an int and a float
+var int_a = 1;
+var float_b = 1.1;
+
