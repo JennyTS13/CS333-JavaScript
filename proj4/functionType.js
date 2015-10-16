@@ -11,10 +11,15 @@ function foo2() {
 	return 5;
 }
 
-print(foo2());
-print(foo1(foo2()));	//passing a function to another function
+function foo3(fn) {
+	fn(3);
+}
+
+print(foo2());			//5
+print(foo1(foo2()));	//6, passing a function to another function
+print(foo3(foo1));		//undefined
 
 /* assign function to variable */
-var func = foo2;
+var func = foo2;	
 
-print(func())	// call the function using the variable
+print(func())	//5, call the function using the variable
