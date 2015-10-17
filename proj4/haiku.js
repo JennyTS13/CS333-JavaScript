@@ -9,11 +9,9 @@
 /* shows how the function listNums can list the numbers in a list
  * and the function can then be called */
 
-function listNums(list){						//5 syllables
-
+function listNums(list){			//5 syllables
     for(num in list) { print( list[num] ); }	//7 syllables
 }
-
-listNums([7, 1]);								//5 syllables
+listNums([7, 1]);				//5 syllables
 
 
