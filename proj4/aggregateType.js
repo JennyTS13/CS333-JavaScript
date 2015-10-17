@@ -15,7 +15,6 @@ var Person = function ( first, last, mi, age ){
     // printing person info
     this.info = function(){
 	print("Name: " + this.firstName + ' ' + this.MI + ' ' + this.lastName);
-	print("Age: " + this.age);
     };
 }
 
@@ -29,6 +28,16 @@ p2.info();
 print("Accessing Person 1's name: " + p1.firstName);
 print("Accessing Person 2's name: " + p2.firstName);
 
-//Adding properties to Person 1
+//Adding a function to the Person prototype
+Person.prototype.getAge = function(){
+    print(this.firstName + " is " + this.age + " years old.");
+};
+
+//Calling the function added to Person after declaration
+p1.getAge();
+p2.getAge();
+
+//Adding properties to p1
 p1.id = "N/A";
 print("Printing Person 1's id. Should print N/A: " + p1.id);
+
