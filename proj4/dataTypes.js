@@ -18,3 +18,6 @@ print(typeof func);		//function
 
 print(typeof (1.2));
 print(2.5e10);
+
+print(Number.MAX_VALUE);	//the max value in JavaScript
+
