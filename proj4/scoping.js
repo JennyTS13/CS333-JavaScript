@@ -4,6 +4,24 @@
  * Demonstrates the properties of scoping
  */
 
+var x = 3;
+function foo1() {
+	var y = x + 5;
+	return y;
+}
+
+function foo2() {
+	var y = 2;
+	return foo1();
+}
+
+function main() {
+	print(foo1());		//8
+	print(foo2());		//8, if dynamic, would print out 7
+}
+
+main();
+
 function scoping() {
 	
 	print("in func: x =", x);	// x = 1
@@ -39,4 +57,5 @@ print("in main: x =", x);	// x = 1
 
 //print("in main: y =", y);		// error, x no longer exists
 //print("in main: i =", i);		// error, i no longer exists
+
 
