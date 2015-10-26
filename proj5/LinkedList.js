@@ -70,10 +70,12 @@ function LinkedList (){
 		//removing at head of list
 		if(tempPrev == null){
 		    this.head = this.head.getNext();
+		    this.size--;
 		    return temp.getThing();
 		}
 		else{
 		    tempPrev.setNext(temp.getNext());
+		    this.size--;
 		    return temp.getThing();
 		}
 	    }
