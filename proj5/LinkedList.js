@@ -188,3 +188,15 @@ l.map(printInt);
 
 print("\nList size: " + l.getSize() );
 
+/* our linked list storing strings */
+var l2 = new LinkedList(); 
+var i = 0; 
+var letters = ['a', 'b', 'c', 'd'];
+//push data on the list
+for(i=0; i<letters.length; i++){
+    l2.push(letters[i]);
+}
+
+// printing the list and testing map
+print("After initialization");
+l2.map(printInt);
