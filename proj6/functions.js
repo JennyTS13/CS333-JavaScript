@@ -13,8 +13,7 @@ var square = function(x) {
     else {
 	return "trying to square a number greater than 10";
     }
-    
-}
+};
 
 var x = 3;
 print( x + " squared:", square(x));
@@ -65,8 +64,7 @@ print(sumArgs(1));
 print(sumArgs(1, 2));
 print(sumArgs(1, 2, 3));
 
-/* Creating Person and Student to demonstrate creating functions dynamically
-   and overriding in Javascript */
+/* Creating Person and Student to demonstrate overriding in Javascript */
 var Person = function ( first, last, mi, age ){
     this.firstName = first;
     this.lastName = last;
@@ -91,7 +89,7 @@ Student.prototype=Object.create(Person.prototype);
 //setting the built-in constructor to Student from Parent
 Student.prototype.constructor = Student;
 
-// Adding function to Person after the object's creation (dynamic)
+// Adding function to Person after the object's creation (dynamically adding)
 Person.prototype.getAge = function(){
     print(this.firstName + " is " + this.age + " years old.");
 };
@@ -111,7 +109,7 @@ Student.prototype.getAge = function(){
 var p = new Person( "Jenny", "Lin", "S", 20 );
 var s = new Student( "Tiffant", "Lam", "C", 20, "Colby");
 
-//Testing overriding and dynamically created function
+//Testing overriding
 //Person Demo
 print("This is a Person's info() and getAge()"); 
 p.info();
