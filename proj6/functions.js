@@ -23,6 +23,8 @@ var x = 11;
 print( x + " squared:", square(x));
 print("return type of squaring function is:", typeof square(x));
 
+print("")
+
 // don't need to have a return statement in a function 
 function noReturn(x) {
     x = x + 1;
@@ -63,6 +65,8 @@ print(sumArgs());
 print(sumArgs(1));
 print(sumArgs(1, 2));
 print(sumArgs(1, 2, 3));
+
+print("")
 
 /* Creating Person and Student to demonstrate overriding in Javascript */
 var Person = function ( first, last, mi, age ){
