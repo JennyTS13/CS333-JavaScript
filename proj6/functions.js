@@ -55,15 +55,15 @@ function sumArgs(x, y) {
     }
 }
 
-print(sumArgs());
-print(sumArgs(1));
-print(sumArgs(1, 2));
-print(sumArgs(1, 2, 3));
-
 /* Overloading cannot be done */
 /*function sumArgs(x){
     print("Overloaded:" + x);
 }*/
+
+print(sumArgs());
+print(sumArgs(1));
+print(sumArgs(1, 2));
+print(sumArgs(1, 2, 3));
 
 /* Creating Person and Student to demonstrate creating functions dynamically
    and overriding in Javascript */
