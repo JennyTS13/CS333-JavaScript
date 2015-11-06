@@ -107,11 +107,9 @@ Student.prototype.getAge = function(){
     print(this.firstName + " Age " + this.age + " attends " + this.school + ".");
 };
 
-
 //Creating instance of Person and Student
 var p = new Person( "Jenny", "Lin", "S", 20 );
 var s = new Student( "Tiffant", "Lam", "C", 20, "Colby");
-
 
 //Testing overriding and dynamically created function
 //Person Demo
