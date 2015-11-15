@@ -1,0 +1,23 @@
+/* Authors: Tiffany Lam and Jenny Lin
+ * CS333 Project 7
+ * Task 3: Garbage Collector
+ * Timing functions to find garbage collection
+ */
+
+//A timer object used to keep track of time
+var Timer = function(){
+    this.startTime;
+    this.endTime;
+    
+    this.start = function(){
+	this.startTime = new Date().getTime();
+    };
+
+    this.end = function(){
+	this.endTime = new Date().getTime();
+    };
+
+    this.getTime(){
+	return this.startTime - this.endTime;
+    };
+};
